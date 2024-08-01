@@ -1,0 +1,51 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container">
+  <h3 class="title">{{ restname }}</h3>
+
+  <form [formGroup]="menuForm" (ngSubmit)="onSubmit()" class="menu-form">
+    <div class="grid-container">
+      <div class="grid-item image-section">
+        <figure>
+          <img [src]="restimage" class="restaurant-image" />
+          <figcaption class="slogan">{{ restslogan }}</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid-item search-section">
+        <section>
+          <input
+            matInput
+            formControlName="name"
+            [(ngModel)]="name"
+            (input)="search()"
+            class="search-input"
+            placeholder="Search"
+          />
+        </section>
+        <mat-form-field class="menu-select-field">
+          <mat-label>Menu</mat-label>
+          <mat-select formControlName="menu" placeholder="Select an item">
+            <mat-option *ngFor="let item of menuItemsArray" [value]="item">
+              {{ item.type }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item menu-output-section">
+        <section>
+          <div id="menuOutput" class="menu-output">
+            <ul class="menu-list">
+              <li *ngFor="let item of menuTypeItemsArray" class="menu-item">
+                {{ item.name }} - {{ item.price }}
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <button mat-raised-button color="primary" type="submit" class="submit-button">Submit</button>
+  </form>
+</div>

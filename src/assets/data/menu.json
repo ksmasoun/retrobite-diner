@@ -1,0 +1,99 @@
+{
+  "restaurant": {
+    "name": "RetroBite Diner",
+    "slogan": "Where you come for the BEST food anywhere!",
+    "picture": "assets/images/diner.jpg",
+    "menu": [
+      {
+        "type": "breakfast",
+        "hours": "Breakfast hours are from 6:00am to 11:00am",
+        "food": [
+          {
+            "name": "Original Belgian Waffles",
+            "description": "Two of our famous Belgian Waffles with plenty of real maple syrup",
+            "calories": "650",
+            "price": "$5.95"
+          },
+          {
+            "name": "French Toast",
+            "description": "Thick slices made from our homemade sourdough bread",
+            "calories": "950",
+            "price": "$4.50"
+          },
+          {
+            "name": "Mile-High Pancakes",
+            "description": "Pancakes stacked as high as you like with our real maple syrup",
+            "calories": "800",
+            "price": "$8.95"
+          },
+          {
+            "name": "Homestyle Breakfast",
+            "description": "Two eggs, bacon or sausage, toast, and our ever-popular hash browns",
+            "calories": "850",
+            "price": "$6.95"
+          }
+        ]
+      },
+      {
+        "type": "lunch",
+        "hours": "Lunch hours are from 11:00am to 5:00pm",
+        "food": [
+          {
+            "name": "Grilled Cheese",
+            "description": "Our best cheese on either wheat or white bread",
+            "calories": "850",
+            "price": "$6.95"
+          },
+          {
+            "name": "BLT",
+            "description": "Bacon, lettuce and tomato on sourdough bread",
+            "calories": "650",
+            "price": "$5.95"
+          },
+          {
+            "name": "Hamburger",
+            "description": "Beef burger with French Fries",
+            "calories": "1050",
+            "price": "$9.95"
+          },
+          {
+            "name": "Chef Salad",
+            "description": "All the fixings with your choice of dressing",
+            "calories": "650",
+            "price": "$5.95"
+          }
+        ]
+      },
+      {
+        "type": "dinner",
+        "hours": "Dinner hours are from 5:00pm to 11:00pm",
+        "food": [
+          {
+            "name": "Grilled Salmon",
+            "description": "Freshly caught Salmon grilled to perfection",
+            "calories": "850",
+            "price": "$16.95"
+          },
+          {
+            "name": "Chicken Pasta",
+            "description": "Grilled chicken in pasta with basil sauce",
+            "calories": "650",
+            "price": "$15.95"
+          },
+          {
+            "name": "Lasagna",
+            "description": "Beef Lasagna",
+            "calories": "1050",
+            "price": "$19.95"
+          },
+          {
+            "name": "Baby-back Ribs",
+            "description": "Ribs coated with our special BBQ sauce",
+            "calories": "1050",
+            "price": "$17.95"
+          }
+        ]
+      }
+    ]
+  }
+}
